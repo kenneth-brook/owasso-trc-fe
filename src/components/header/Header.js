@@ -1,6 +1,8 @@
+import background from '../../images/header.jpg'
+
 function Header() {
     return (
-      <div className="Header">
+      <div style={{backgroundImage: `url(${background})`}} className="Header">
         <h1>Owasso TRC Header</h1>
       </div>
     );
