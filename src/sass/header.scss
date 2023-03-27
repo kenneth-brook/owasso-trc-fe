@@ -1,3 +1,57 @@
 .Header {
     min-height: 500px;
+
+    .headerTop {
+        height: 12.91rem;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(6.68rem, #fff), color-stop(9.95rem, rgba(255, 255, 255, 0.77)), to(rgba(255, 255, 255, 0)));
+        background: linear-gradient(to bottom, #fff 6.68rem, rgba(255, 255, 255, 0.77) 9.95rem, rgba(255, 255, 255, 0));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        .topWrap {
+            display: flex;
+            justify-content: center;
+
+            .col-center {
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                -ms-flex-preferred-size: 18.18rem;
+                flex-basis: 18.18rem;
+                margin: 0 3.75%;
+                position: relative;
+
+                .logo {
+                    width: 18.18rem;
+                    margin: 0;
+                    position: absolute;
+                    top: 0.73rem;
+
+                    a {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        font-size: 1.36rem;
+                        line-height: 1;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: #7b1f25;
+
+                        img {
+                            width: 210%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
