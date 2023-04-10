@@ -1,5 +1,8 @@
 import background from '../../images/header.jpg'
 import logo from '../../images/logo.png'
+import pin from '../../images/icon-ionic-ios-pin.svg'
+import phone from '../../images/icon-awesome-phone-alt.svg'
+import mail from '../../images/icon-zocial-email.svg'
 
 function Header() {
     return (
@@ -7,10 +10,19 @@ function Header() {
         <div className='headerTop'>
             <div className='topWrap'>
                 <div className='infoLeft'>
-                    <div className='infoTop'></div>
+                    <div className='infoTop'>
+                        <img src={`${pin}`} alt="" />
+                        <p>315 S. Cedar Street, Owasso, OK 74055</p>
+                    </div>
                     <div className='infoBottom'>
-                        <div className='infoBottomLeft'></div>
-                        <div className='infoBottomRight'></div>
+                        <div className='infoBottomLeft'>
+                        <img src={`${phone}`} alt="" />
+                        <p>918.272.2141</p>
+                        </div>
+                        <div className='infoBottomRight'>
+                        <img src={`${mail}`} alt="" />
+                        <p>info@owassochamber.com</p>
+                        </div>
                     </div>
                 </div>
                 <div className='col-center'>
