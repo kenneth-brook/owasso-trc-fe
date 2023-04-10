@@ -3,6 +3,9 @@ import logo from '../../images/logo.png'
 import pin from '../../images/icon-ionic-ios-pin.svg'
 import phone from '../../images/icon-awesome-phone-alt.svg'
 import mail from '../../images/icon-zocial-email.svg'
+import twit from '../../images/icon-ionic-twitter.svg'
+import fb from '../../images/icon-zocial-facebook.svg'
+import ln from '../../images/icon-zocial-linkedin.svg'
 
 function Header() {
     return (
@@ -32,7 +35,32 @@ function Header() {
                         </a>
                     </div>
                 </div>
-                <div className='col-right'></div>
+                <div className='col-right'>
+                    <div className='rightTop'>
+                        <div className='socialBlock'>
+                            <a href="" target="_blank">
+                                <img src={`${twit}`} alt="" />
+                            </a>
+                            <a href="" target="_blank">
+                                <img src={`${fb}`} alt="" />
+                            </a>
+                            <a href="" target="_blank">
+                                <img src={`${ln}`} alt="" />
+                            </a>
+                        </div>
+                        <a href=''>
+                            <div className='joinButt'>
+                                <p>JOIN NOW</p>
+                            </div>
+                        </a>
+                        <a href=''>
+                            <div className='logButt'>
+                                <p>Member Log-In</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className='rightBottom'></div>
+                </div>
             </div>
         </div>
       </div>

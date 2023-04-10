@@ -16,10 +16,14 @@
             justify-content: space-around;
 
             .infoLeft {
+                padding: 0 15px 10px 15px;
+                border-bottom: 1px solid black;
 
                 .infoTop {
                     display: flex;
                     margin-top: 10px;
+                    
+
 
                   img {
                         margin-right: 15px;
@@ -102,6 +106,51 @@
                             width: 210%;
                         }
                     }
+                }
+            }
+
+            .col-right {
+                padding: 0 15px 10px 15px;
+                border-bottom: 1px solid black;
+
+                .rightTop {
+                    display: flex;
+                    margin-top: 20px;
+
+                    .socialBlock {
+                        display: flex;
+                        margin-top: 4px;
+
+                        a {
+                            padding: 0 5px;
+                        }
+                    }
+
+                    .joinButt {
+                        background-color: #a32431;
+                        padding: 7px 20px;
+                        margin: 0 5px;
+
+                        p {
+                            color: white;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .logButt {
+                        background-color: #616161;
+                        padding: 7px 15px;
+                        margin: 0 5px;
+
+                        p {
+                            color: white;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .rightBottom {
+                    
                 }
             }
         }
