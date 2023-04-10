@@ -6,6 +6,14 @@ import mail from '../../images/icon-zocial-email.svg'
 import twit from '../../images/icon-ionic-twitter.svg'
 import fb from '../../images/icon-zocial-facebook.svg'
 import ln from '../../images/icon-zocial-linkedin.svg'
+import guide from '../../images/icon-guide.svg'
+
+import cham from '../../images/menu-chamber.jpg'
+import mem from '../../images/menu-membership.jpg'
+import prog from '../../images/menu-programs.jpg'
+import event from '../../images/menu-events.jpg'
+import adv from '../../images/menu-advocacy.jpg'
+import res from '../../images/menu-resources.jpg'
 
 function Header() {
     return (
@@ -59,9 +67,46 @@ function Header() {
                             </div>
                         </a>
                     </div>
-                    <div className='rightBottom'></div>
+                    <div className='rightBottom'>
+                        <a href="" target="_blank">
+                            <div className='rightBottomWrap'>
+                                <img src={`${guide}`} alt="" />
+                                <p>Relocation Guide</p> 
+                            </div>
+                            
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div className='menuWrap'>
+            <div className='bubbleBar'>
+                <div className='imgBox'>
+                    <img src={`${cham}`} alt="" />
+                    <p>Our Chamber</p>
+                </div>
+                <div className='imgBox'>
+                    <img src={`${mem}`} alt="" />
+                    <p>Membership</p>
+                </div>
+                <div className='imgBox'>
+                    <img src={`${prog}`} alt="" />
+                    <p>Programs</p>
+                </div>
+                <div className='imgBox'>
+                    <img src={`${event}`} alt="" />
+                    <p>Events</p>
+                </div>
+                <div className='imgBox'>
+                    <img src={`${adv}`} alt="" />
+                    <p>Advocacy</p>
+                </div>
+                <div className='imgBox'>
+                    <img src={`${res}`} alt="" />
+                    <p>Resources</p>
+                </div>
+            </div>
+            <div className='redBar'></div>
         </div>
       </div>
     );
