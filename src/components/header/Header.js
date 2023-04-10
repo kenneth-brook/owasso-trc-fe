@@ -6,10 +6,17 @@ function Header() {
       <div style={{backgroundImage: `url(${background})`}} className="Header">
         <div className='headerTop'>
             <div className='topWrap'>
+                <div className='infoLeft'>
+                    <div className='infoTop'></div>
+                    <div className='infoBottom'>
+                        <div className='infoBottomLeft'></div>
+                        <div className='infoBottomRight'></div>
+                    </div>
+                </div>
                 <div className='col-center'>
                     <div className='logo'>
                         <a href='https://owassochamber.com'>
-                            <img src={`${logo}`} />
+                            <img src={`${logo}`} alt="Owasso Chambbe of Commerce Logo" />
                         </a>
                     </div>
                 </div>
