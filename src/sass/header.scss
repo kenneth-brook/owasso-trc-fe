@@ -1,5 +1,5 @@
 .Header {
-    min-height: 500px;
+    height: 500px;
 
     .headerTop {
         height: 12.91rem;
@@ -174,8 +174,8 @@
             display: flex;
             justify-content: space-around;
             position: relative;
-            bottom: -330px;
-            z-index: 2;
+            bottom: -280px;
+            z-index: 3;
 
             .imgBox {
                 width: 190px;
@@ -183,6 +183,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                
 
                 img {
                     width: 174px;
@@ -199,13 +200,33 @@
             }
         }
 
+        .popBar {
+            width: 100%;
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            bottom: -20px;
+            z-index: 1;
+
+            .popBox {
+                width: 190px;
+                min-height: 225px;
+                border-top-right-radius: 18px;
+                border-top-left-radius: 18px;
+                background-color: white;
+                
+            
+            }   
+        }
+
+        
+
         .redBar {
             width: 100%;
             height: 82px;
             background-color: #a32431;
             position: relative;
-            bottom: -280px;
-            z-index: 1;
+            z-index: 2;
         }
     }
 }

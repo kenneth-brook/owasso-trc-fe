@@ -106,6 +106,14 @@ function Header() {
                     <p>Resources</p>
                 </div>
             </div>
+            <div className='popBar'>
+                <div className='popBox'></div>
+                <div className='popBox'></div>
+                <div className='popBox'></div>
+                <div className='popBox'></div>
+                <div className='popBox'></div>
+                <div className='popBox'></div>
+            </div>
             <div className='redBar'></div>
         </div>
       </div>
