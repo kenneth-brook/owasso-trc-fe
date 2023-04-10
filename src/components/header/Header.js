@@ -16,12 +16,12 @@ function Header() {
                     </div>
                     <div className='infoBottom'>
                         <div className='infoBottomLeft'>
-                        <img src={`${phone}`} alt="" />
-                        <p>918.272.2141</p>
+                            <img src={`${phone}`} alt="" />
+                            <p>918.272.2141</p>
                         </div>
                         <div className='infoBottomRight'>
-                        <img src={`${mail}`} alt="" />
-                        <p>info@owassochamber.com</p>
+                            <img src={`${mail}`} alt="" />
+                            <p>info@owassochamber.com</p>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,6 @@ function Header() {
                         </a>
                     </div>
                 </div>
-                <div className='col-left'></div>
                 <div className='col-right'></div>
             </div>
         </div>

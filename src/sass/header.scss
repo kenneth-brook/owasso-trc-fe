@@ -31,37 +31,38 @@
                         font-weight: bold;
                     }
                 }
-            }
+            
 
-            .infoBottom {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 5px;
-
-                .infoBottomLeft {
+                .infoBottom {
                     display: flex;
+                    justify-content: space-between;
+                    margin-top: 5px;
 
-                    img {
-                        margin-right: 15px;
+                    .infoBottomLeft {
+                        display: flex;
+
+                        img {
+                            margin-right: 15px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
                     }
 
-                    p {
-                        font-size: 18px;
-                        font-weight: bold;
-                    }
-                }
+                    .infoBottomRight {
+                        display: flex;
 
-                .infoBottomRight {
-                    display: flex;
+                        img {
+                            margin-right: 15px;
+                            margin-left: 15px;
+                        }
 
-                    img {
-                        margin-right: 15px;
-                        margin-left: 15px;
-                    }
-
-                    p {
-                        font-size: 18px; 
-                        font-weight: bold;
+                        p {
+                            font-size: 18px; 
+                            font-weight: bold;
+                        }
                     }
                 }
             }
