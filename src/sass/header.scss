@@ -205,18 +205,28 @@
             display: flex;
             position: relative;
             justify-content: space-around;
-            bottom: -20px;
+            bottom: -35px;
             z-index: 1;
 
-            .popBox {
-                width: 190px;
-                min-height: 225px;
-                border-top-right-radius: 18px;
-                border-top-left-radius: 18px;
-                background-color: white;
-                
+            .popHold {
+               width: 190px;
+               position: relative;
+
             
-            }   
+
+                div[class^="popBox"] {
+                    height: 10px;
+                    border-top-right-radius: 18px;
+                    border-top-left-radius: 18px;
+                    background-color: white;
+                    animation-name: popup;
+                    -webkit-animation-name: popup;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    position: relative;
+                    transform-origin: bottom;
+                }  
+            }
         }
 
         
@@ -225,8 +235,58 @@
             width: 100%;
             height: 82px;
             background-color: #a32431;
-            position: relative;
+            position: absolute;
             z-index: 2;
+            bottom: 240px;
         }
     }
+
+    @-webkit-keyframes popup {
+        0% {
+            height: 0px;
+            padding-bottom: 0px;
+        }
+
+        100% {
+            height: auto;
+            padding-bottom: 205px;
+        }
+    }
+
+}
+
+@keyframes popup {
+    0% {
+        height: 0px;
+        padding-bottom: 0px;
+    }
+
+    100% {
+        height: auto;
+        padding-bottom: 205px;
+    }
+}
+
+@keyframes popdown {
+    0% {
+        height: auto;
+        padding-bottom: 205px;
+    }
+
+    100% {
+        height: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.popinUp {
+    animation-name: popup;
+    -webkit-animation-name: popup;
+    animation-duration: 1s;
+}
+
+.popinDown {
+    animation-name: popdown;
+    -webkit-animation-name: popup;
+    animation-duration: 1s;
 }

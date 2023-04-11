@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import background from '../../images/header.jpg'
 import logo from '../../images/logo.png'
 import pin from '../../images/icon-ionic-ios-pin.svg'
@@ -16,6 +18,8 @@ import adv from '../../images/menu-advocacy.jpg'
 import res from '../../images/menu-resources.jpg'
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
       <div style={{backgroundImage: `url(${background})`}} className="Header">
         <div className='headerTop'>
@@ -81,38 +85,50 @@ function Header() {
         </div>
         <div className='menuWrap'>
             <div className='bubbleBar'>
-                <div className='imgBox'>
+                <div onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)} id="img1" className='imgBox'>
                     <img src={`${cham}`} alt="" />
                     <p>Our Chamber</p>
                 </div>
-                <div className='imgBox'>
+                <div id="img2" className='imgBox hov2'>
                     <img src={`${mem}`} alt="" />
                     <p>Membership</p>
                 </div>
-                <div className='imgBox'>
+                <div id="img3" className='imgBox hov3'>
                     <img src={`${prog}`} alt="" />
                     <p>Programs</p>
                 </div>
-                <div className='imgBox'>
+                <div id="img4" className='imgBox hov4'>
                     <img src={`${event}`} alt="" />
                     <p>Events</p>
                 </div>
-                <div className='imgBox'>
+                <div id="img5" className='imgBox hov5'>
                     <img src={`${adv}`} alt="" />
                     <p>Advocacy</p>
                 </div>
-                <div className='imgBox'>
+                <div id="img6" className='imgBox hov6'>
                     <img src={`${res}`} alt="" />
                     <p>Resources</p>
                 </div>
             </div>
             <div className='popBar'>
-                <div className='popBox'></div>
-                <div className='popBox'></div>
-                <div className='popBox'></div>
-                <div className='popBox'></div>
-                <div className='popBox'></div>
-                <div className='popBox'></div>
+                <div className='popHold'>
+                  {isOpen && <div className='popBox'></div>}  
+                </div>
+                <div className='popHold'>
+                  {isOpen && <div className='popBox'></div>}  
+                </div>
+                <div className='popHold'>
+                  {isOpen && <div className='popBox'></div>}  
+                </div>
+                <div className='popHold'>
+                  {isOpen && <div className='popBox'></div>}  
+                </div>
+                <div className='popHold'>
+                  {isOpen && <div className='popBox'></div>}  
+                </div>
+                <div className='popHold'>
+                  {isOpen && <div className='popBox'></div>}  
+                </div>
             </div>
             <div className='redBar'></div>
         </div>
