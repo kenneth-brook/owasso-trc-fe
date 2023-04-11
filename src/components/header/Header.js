@@ -19,6 +19,11 @@ import res from '../../images/menu-resources.jpg'
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+    const [isOpen4, setIsOpen4] = useState(false);
+    const [isOpen5, setIsOpen5] = useState(false);
+    const [isOpen6, setIsOpen6] = useState(false);
 
     return (
       <div style={{backgroundImage: `url(${background})`}} className="Header">
@@ -89,45 +94,79 @@ function Header() {
                     <img src={`${cham}`} alt="" />
                     <p>Our Chamber</p>
                 </div>
-                <div id="img2" className='imgBox hov2'>
+                <div onMouseEnter={() => setIsOpen2(true)} onMouseLeave={() => setIsOpen2(false)} id="img2" className='imgBox hov2'>
                     <img src={`${mem}`} alt="" />
                     <p>Membership</p>
                 </div>
-                <div id="img3" className='imgBox hov3'>
+                <div onMouseEnter={() => setIsOpen3(true)} onMouseLeave={() => setIsOpen3(false)} id="img3" className='imgBox hov3'>
                     <img src={`${prog}`} alt="" />
                     <p>Programs</p>
                 </div>
-                <div id="img4" className='imgBox hov4'>
+                <div onMouseEnter={() => setIsOpen4(true)} onMouseLeave={() => setIsOpen4(false)} id="img4" className='imgBox hov4'>
                     <img src={`${event}`} alt="" />
                     <p>Events</p>
                 </div>
-                <div id="img5" className='imgBox hov5'>
+                <div onMouseEnter={() => setIsOpen5(false)} onMouseLeave={() => setIsOpen5(false)} id="img5" className='imgBox hov5'>
                     <img src={`${adv}`} alt="" />
                     <p>Advocacy</p>
                 </div>
-                <div id="img6" className='imgBox hov6'>
+                <div onMouseEnter={() => setIsOpen6(true)} onMouseLeave={() => setIsOpen6(false)} id="img6" className='imgBox hov6'>
                     <img src={`${res}`} alt="" />
                     <p>Resources</p>
                 </div>
             </div>
             <div className='popBar'>
                 <div className='popHold'>
-                  {isOpen && <div className='popBox'></div>}  
+                  {isOpen && <div onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)} className='popBox'>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Staff & Board</a></li>
+                            <li><a href="">Ambassadors</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>}  
                 </div>
                 <div className='popHold'>
-                  {isOpen && <div className='popBox'></div>}  
+                  {isOpen2 && <div onMouseEnter={() => setIsOpen2(true)} onMouseLeave={() => setIsOpen2(false)} className='popBox'>
+                  <ul>
+                            <li><a href="">Member Benefits</a></li>
+                            <li><a href="">Get Involved</a></li>
+                            <li><a href="">Member Directory</a></li>
+                            <li><a href="">Job Opportunities</a></li>
+                            <li><a href="">Submit an Event</a></li>
+                            <li><a href="">Member Login</a></li>
+                            <li><a href="">Investment Opportunities</a></li>
+                        </ul>
+                    </div>}  
                 </div>
                 <div className='popHold'>
-                  {isOpen && <div className='popBox'></div>}  
+                  {isOpen3 && <div onMouseEnter={() => setIsOpen3(true)} onMouseLeave={() => setIsOpen3(false)} className='popBox'>
+                  <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>}  
                 </div>
                 <div className='popHold'>
-                  {isOpen && <div className='popBox'></div>}  
+                  {isOpen4 && <div onMouseEnter={() => setIsOpen4(true)} onMouseLeave={() => setIsOpen4(false)} className='popBox'>
+                  <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>}  
                 </div>
                 <div className='popHold'>
-                  {isOpen && <div className='popBox'></div>}  
+                  {isOpen5 && <div className='popBox'></div>}  
                 </div>
                 <div className='popHold'>
-                  {isOpen && <div className='popBox'></div>}  
+                  {isOpen6 && <div onMouseEnter={() => setIsOpen6(true)} onMouseLeave={() => setIsOpen6(false)} className='popBox'>
+                  <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>}  
                 </div>
             </div>
             <div className='redBar'></div>

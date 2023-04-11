@@ -174,7 +174,7 @@
             display: flex;
             justify-content: space-around;
             position: relative;
-            bottom: -280px;
+            bottom: -320px;
             z-index: 3;
 
             .imgBox {
@@ -205,31 +205,43 @@
             display: flex;
             position: relative;
             justify-content: space-around;
-            bottom: -35px;
+            bottom: -55px;
             z-index: 1;
 
             .popHold {
                width: 190px;
                position: relative;
 
-            
-
                 div[class^="popBox"] {
-                    height: 10px;
+                    height: 1px;
                     border-top-right-radius: 18px;
                     border-top-left-radius: 18px;
                     background-color: white;
                     animation-name: popup;
                     -webkit-animation-name: popup;
-                    animation-duration: 1s;
+                    animation-duration: .7s;
                     animation-fill-mode: forwards;
                     position: relative;
+                    bottom: -170px;
+                    transform: translateY(-80%);
                     transform-origin: bottom;
+
+                    ul {
+
+                        li {
+                            margin-left: 15px;
+                            padding-top: 15px;
+                            
+                            a {
+                                font-size: 1.6rem;
+                                text-decoration: none;
+                                color: #444;
+                            }
+                        }
+                    }
                 }  
             }
         }
-
-        
 
         .redBar {
             width: 100%;
@@ -237,22 +249,9 @@
             background-color: #a32431;
             position: absolute;
             z-index: 2;
-            bottom: 240px;
+            bottom: 200px;
         }
     }
-
-    @-webkit-keyframes popup {
-        0% {
-            height: 0px;
-            padding-bottom: 0px;
-        }
-
-        100% {
-            height: auto;
-            padding-bottom: 205px;
-        }
-    }
-
 }
 
 @keyframes popup {
@@ -267,26 +266,8 @@
     }
 }
 
-@keyframes popdown {
-    0% {
-        height: auto;
-        padding-bottom: 205px;
-    }
-
-    100% {
-        height: 0px;
-        padding-bottom: 0px;
-    }
-}
-
 .popinUp {
     animation-name: popup;
-    -webkit-animation-name: popup;
-    animation-duration: 1s;
-}
-
-.popinDown {
-    animation-name: popdown;
     -webkit-animation-name: popup;
     animation-duration: 1s;
 }
