@@ -1,11 +1,12 @@
 import Header from './components/header/Header';
+import Body from './components/body/Body';
 import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Owasso TRC</h1>
+      <Body />
       <Footer />
     </div>
   );
