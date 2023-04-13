@@ -14,3 +14,30 @@
         top: -215px;
     }
 }
+
+.mainBody {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .therm {
+        width: 47%;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .prods {
+        width: 47%;
+        padding: 0 80px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
