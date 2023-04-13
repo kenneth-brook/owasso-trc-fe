@@ -27,6 +27,7 @@ function Header() {
 
     return (
       <div style={{backgroundImage: `url(${background})`}} className="Header">
+        <div className='redBar'></div>
         <div className='headerTop'>
             <div className='topWrap'>
                 <div className='infoLeft'>
@@ -168,7 +169,7 @@ function Header() {
                     </div>}  
                 </div>
             </div>
-            <div className='redBar'></div>
+            
         </div>
       </div>
     );

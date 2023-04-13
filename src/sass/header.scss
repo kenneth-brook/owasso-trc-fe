@@ -174,7 +174,7 @@
             display: flex;
             justify-content: space-around;
             position: relative;
-            bottom: -320px;
+            bottom: -270px;
             z-index: 3;
 
             .imgBox {
@@ -205,7 +205,7 @@
             display: flex;
             position: relative;
             justify-content: space-around;
-            bottom: -55px;
+            bottom: 0;
             z-index: 1;
 
             .popHold {
@@ -219,7 +219,7 @@
                     background-color: white;
                     animation-name: popup;
                     -webkit-animation-name: popup;
-                    animation-duration: .7s;
+                    animation-duration: .5s;
                     animation-fill-mode: forwards;
                     position: relative;
                     bottom: -170px;
@@ -243,15 +243,17 @@
             }
         }
 
-        .redBar {
-            width: 100%;
-            height: 82px;
-            background-color: #a32431;
-            position: absolute;
-            z-index: 2;
-            bottom: 200px;
-        }
+        
     }
+}
+
+.redBar {
+    width: 100%;
+    height: 82px;
+    background-color: #a32431;
+    position: relative;
+    z-index: 2;
+    bottom: -500px;
 }
 
 @keyframes popup {
