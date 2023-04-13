@@ -1,0 +1,27 @@
+.nav {
+    position: relative;
+    top: 180px;
+
+    ul {
+        display: flex;
+        position: absolute;
+        top: -90px;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+
+        li {
+            font-size: 1.8rem;
+            text-align: center;
+            
+            .link {
+                text-decoration: none;
+                  
+            }
+           
+            .active {
+                color: red;
+            }
+        }
+    }
+}

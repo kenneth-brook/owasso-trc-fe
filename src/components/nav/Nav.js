@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 
 import Home from "../home/Home";
 import SponSales from "../sponSales/SponSales";
@@ -10,14 +10,14 @@ function Nav() {
             <nav>
                 <ul>
                     <li>
-                        <Link className="link" to="/" activeClassName="active">
-                            TRC Home
-                        </Link>
+                        <NavLink className="link" to="/" activeClassName="active">
+                            TRC<br />Home
+                        </NavLink>
                     </li>
                     <li>
-                        <Link className="link" to="/Sponsorship-Sales" activeClassName="active">
-                            Sponsorship Sales
-                        </Link>
+                        <NavLink className="link" to="/Sponsorship-Sales" activeClassName="active">
+                            Sponsorship<br />Sales
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
