@@ -235,7 +235,11 @@
                             a {
                                 font-size: 1.6rem;
                                 text-decoration: none;
-                                color: #444;
+                                color: #fff;
+                                animation-name: popupFade;
+                                -webkit-animation-name: popupFade;
+                                animation-duration: .7s;
+                                animation-fill-mode: forwards;
                             }
                         }
                     }
@@ -260,11 +264,23 @@
     0% {
         height: 0px;
         padding-bottom: 0px;
+        
     }
 
     100% {
         height: auto;
         padding-bottom: 205px;
+        
+    }
+}
+
+@keyframes popupFade {
+    0% {
+        color: #fff;  
+    }
+
+    100% {
+        color: #444; 
     }
 }
 

@@ -1,17 +1,23 @@
 .homeWrap {
     text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+    padding: 10px;
 
     h1 {
         font-size: 2.5rem;
         color: #a32431;
         position: relative;
         top: -220px;
+        background-color: white;
     }
 
     p {
         font-size: 1.4rem;
         position: relative;
         top: -215px;
+        background-color: white;
     }
 }
 
