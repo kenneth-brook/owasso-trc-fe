@@ -1,9 +1,27 @@
 import therm from '../../images/Group 349.png';
 import prod from '../../images/Group 350.png';
 
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { SanityClient } from '@sanity/client';
 
 function Home() {
+    const [campaign, setCampaign] = useState(null);
+
+    useEffect(() => {
+        SanityClient
+          .fetch(
+            `*[_type == "campaignInfo"]{
+                campaignYear,
+                goal
+              }`
+          )
+          .then((data) => setCampaign(data))
+          .catch(console.error);
+      }, []);
+    
+      console.log(campaign);
+
+
     return (
         <div>
             <div className="homeWrap">
